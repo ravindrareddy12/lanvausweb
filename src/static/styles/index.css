@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for additional elements */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
+
+.header .logo {
+  font-size: 24px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEwfHxlbnRlcHJpc2V8ZW58MHx8fHwxNjI1MzQ0NzA4&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.hero .hero-content h1 {
+  font-size: 48px;
+}
+
+.hero .hero-content p {
+  font-size: 24px;
+}
+
+.hero .hero-content a {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero .hero-content a:hover {
+  transform: translateY(-5px);
+}
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .container .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .flex div {
+  display: flex;
+  align-items: center;
+}
+
+footer .container .flex div h2 {
+  font-size: 24px;
+}
+
+footer .container .flex div p {
+  margin-top: 10px;
+}
+
+footer .container .flex div span {
+  margin-left: 10px;
+}
+
+footer .border-t {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  margin-top: 20px;
+}
